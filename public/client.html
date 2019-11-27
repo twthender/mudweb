@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" type="text/css" href="client.css">
+</head>
+<body onload="setup()">
+
+<div class="left">
+    <div class="main" id="mainTextBox"></div>
+</div>
+
+<div class="input">
+    <div class="left-input">
+        <input id="commandInput" type="text" class="text">
+        <button class="button-send" onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="right-input">
+        <button class="command-button" onclick="look()">Look</button>
+        <button class="command-button" onclick="inventory()">Inventory</button>
+        <button class="command-button" onclick="inventory()">Inventory</button>
+    </div>
+</div>
+
+</body>
+</html>
